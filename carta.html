@@ -1,37 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Para ti 💌</title>
+  <title>Para Ti 💌</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Crimson+Pro:wght@400;500&display=swap');
+
     body {
-      background: #fff0f5;
-      font-family: 'Georgia', serif;
-      color: #333;
+      background: linear-gradient(180deg, #fff0f5, #ffe4e1);
+      background-image: url('amy1.jpeg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      font-family: 'Crimson Pro', serif;
+      color: #4a3c3c;
       text-align: center;
       padding: 50px;
+      animation: fadeIn 1s ease-in;
     }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
     .carta {
-      background: white;
-      border-radius: 15px;
-      padding: 30px;
-      max-width: 600px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 25px;
+      padding: 40px;
+      max-width: 650px;
       margin: auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      animation: slideUp 1.2s ease;
     }
+
+    @keyframes slideUp {
+      from {transform: translateY(30px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 48px;
+      color: #c2185b;
+      margin-bottom: 10px;
+    }
+
     p {
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    img.decoracion {
+      width: 120px;
+      border-radius: 15px;
+      margin-bottom: 25px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    img.decoracion:hover {
+      transform: scale(1.05);
+    }
+
+    .firma {
+      font-family: 'Great Vibes', cursive;
+      font-size: 26px;
+      color: #c2185b;
+      margin-top: 25px;
     }
   </style>
 </head>
 <body>
   <div class="carta">
+    <img src="amy1.jpeg" alt="Decoración romántica" class="decoracion">
     <h1>💌 Para Ti</h1>
     <p>Quería escribirte algo bonito, aunque las palabras nunca basten.</p>
     <p>Eres una persona que deja huella, que ilumina incluso los días grises, No sé si alguna vez leerás estas palabras, y tal vez nunca lo hagas. No importa. No te escribo para que respondas, para poder poner en palabras lo que mi corazón lleva guardado tanto tiempo.
-    <p>Te amo. </p>
+    <p><strong>Te amo.</strong></p>
     <p>Te amo con una fuerza que a veces me duele, que a veces me hace sonreír sola, recordando momentos, palabras o simplemente tu esencia que se quedó en mi memoria.</p> 
     <img src="descarga.jpg" alt="Imagen decorativa" style="width:150px; margin-bottom:20px; border-radius:10px;">
     <p>Te amo aunque no pueda tenerte, aunque nuestras vidas hayan tomado caminos distintos, aunque mis manos ya no puedan encontrarse con las tuyas. Te amo y ya no espero nada de ti; solo necesito que estas palabras existan, aunque sea en silencio.</p>
@@ -44,11 +93,10 @@
     <p>Gracias. Gracias por existir en mi vida, aunque haya sido de manera fugaz o complicada. Gracias por mostrarme que amar puede ser profundo, que puede doler y sanar al mismo tiempo, que puede quedarse en el corazón aunque la persona no esté. Gracias por ser un pedazo de mi historia, un pedazo de mí que nunca se olvidará.</p>
     <p>No sé si estas palabras te lleguen algún día, y sinceramente ya no importa. Las escribo para liberarme, para honrar lo que siento, para reconocer que te amo con toda mi alma, aunque ya no seas mío</p>
     <p>Gracias por existir, por ser tú. ❤️</p>
-    <p>Con cariño,<br><strong>Rebeca</strong></p>
-    <img src="amy1.jpeg" alt="Imagen decorativa" style="width:150px; margin-bottom:20px; border-radius:10px;">
+    <div class="firma">Con cariño,<br>Rebeca</div>
   </div>
 </body>
-
 </html>
+
 
 
